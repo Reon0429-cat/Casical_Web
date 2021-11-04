@@ -1,5 +1,7 @@
-const Header = (props) => {
-    const {logoIcon, settingIcon} = props;
+import logoIcon from "../img/logo.png"
+import settingIcon from "../img/setting-icon.png"
+
+const Header = () => {
     return (
         <header id="header" className="fadeDownTrigger">
             <h1 className="smoothTrigger">
