@@ -1,63 +1,65 @@
 @charset "utf-8";
-
 :root {
-    --primary:#7A4E9A;
-    --text1st:#E4E1F2;
-    --text2nd:#908e99;
+    --primary: #7A4E9A;
+    --text1st: #E4E1F2;
+    --text2nd: #908e99;
 }
 /* レイアウトのためのCSS */
 
-body{
+body {
     font-family: 'Noto Sans JP', sans-serif;
-	color: #333;
-	font-size:1rem;
-	line-height:1.85;
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.85;
     letter-spacing: 1px;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-text-size-adjust: 100%; 
-	word-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    word-wrap: break-word;
 }
 
-
-ul{
-	margin:0;
-	padding: 0;
-	list-style: none;
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-a{
-	color: #333;
-	text-decoration: none;
+a {
+    color: #333;
+    text-decoration: none;
     outline: none;
 }
 
-img{
-    width:100%;
+img {
+    width: 100%;
     height: auto;
 }
 
-*{
-    box-sizing: border-box
+* {
+    box-sizing: border-box;
 }
 
 /* font-family */
 
-#header,h1,h2,.heading01,.count-size{
+#header,
+.count-size,
+.heading01,
+h1,
+h2 {
     font-family: 'Roboto', sans-serif;
 }
 
 /* header */
 
-#header{
-    padding:20px 70px 0px 70px;
+#header {
+    padding: 20px 70px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: solid 1px var(--text1st);
 }
 
-#header h1 a{
+#header h1 a {
     width: 130px;
 }
 
@@ -65,17 +67,16 @@ img{
     width: 130px;
 }
 
-#header .header-area{
+#header .header-area {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-
 /* container */
 
-#container{
-    padding:0 70px 0 130px;
+#container {
+    padding: 0 70px 0 130px;
 }
 
 /*---------------------------------------
@@ -147,7 +148,6 @@ message
 
 --------------------------------*/
 
-
 .lower {
     width: 100%;
     height: 270px;
@@ -174,7 +174,6 @@ message
     color: var(--primary);
 }
 
-
 /*---------------------------------
 
 Qiita
@@ -189,7 +188,8 @@ Qiita
     padding: 20px 45px;
 }
 
-.github-top,.qiita-top {
+.github-top,
+.qiita-top {
     display: flex;
     gap: 30px;
     font-size: 22px;
@@ -264,8 +264,7 @@ about
 
 .profile-bio {
     width: 90%;
-    margin: 0 auto;
-    margin-top: 12px;
+    margin: 12px auto 0;
 }
 
 /* skillScore */
@@ -294,8 +293,172 @@ about
     height: 170px;
 }
 
+/*--------------------------------------
 
+こっからregisterページだよーーー
 
+---------------------------------*/
 
+.register-wrap {
+    text-align: center;
+    font-size: 24px;
+    margin: auto;
+    padding-top: 150px;
+    width: fit-content;
+}
 
+.row {
+    display: flex;
+    margin: 20px auto;
+    text-align: center;
+    width: 100%;
+}
 
+.register-wrap label,
+.register-wrap p {
+    font-weight: bold;
+}
+
+.register-wrap input {
+    border: none;
+    border-radius: 40px;
+    box-shadow: none;
+    padding: 2px 8px;
+    background-color: var(--text1st);
+    padding-left: 15px;
+}
+
+.register-wrap input:focus {
+    outline: none;
+}
+
+select {
+    background-color: var(--text1st);
+    border-radius: 40px;
+    -webkit-appearance: none;
+    appearance: none;
+    /* デフォルトのスタイルを無効 */
+}
+
+select::-ms-expand {
+    display: none;
+    /* デフォルトのスタイルを無効(IE用) */
+}
+
+select {
+    background-image: url("../img/arrow-bottom.png");
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    background-size: 16px 13px;
+}
+
+option {
+    font-weight: bold;
+}
+
+.row label,
+.row p:first-child {
+    width: 270px;
+    text-align: right;
+    margin-right: 30px;
+}
+
+.agreement {
+    margin: 0 auto;
+    width: fit-content;
+    font-weight: bold;
+    text-align: center;
+}
+
+.agreement a {
+    color: var(--primary);
+    border-bottom: solid 2px var(--primary);
+}
+
+input[type=checkbox] {
+    display: none;
+}
+.checkbox01 {
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 30px;
+    position: relative;
+    width: auto;
+}
+.checkbox01::before {
+    background: #fff;
+    border: 2px solid #231815;
+    content: '';
+    display: block;
+    height: 16px;
+    left: 5px;
+    margin-top: -8px;
+    position: absolute;
+    top: 50%;
+    width: 16px;
+}
+.checkbox01::after {
+    border-right: 3px solid var(--primary);
+    border-bottom: 3px solid var(--primary);
+    content: '';
+    display: block;
+    height: 9px;
+    left: 10px;
+    margin-top: -7px;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transform: rotate(45deg);
+    width: 5px;
+}
+input[type=checkbox]:checked + .checkbox01::after {
+    opacity: 1;
+}
+
+.employment,
+.pref_name {
+    width: 140px;
+    padding-right: 10px;
+}
+
+.month,
+.year {
+    width: 100px;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
+.month {
+    margin-left: 10px;
+}
+
+.github-account input {
+    width: 330px;
+}
+
+.qiita-account p {
+    background-color: var(--text1st);
+    padding-left: 10px;
+    border-radius: 40px 0 0 40px;
+}
+
+.qiita-account input {
+    border-radius: 0 40px 40px 0;
+}
+
+.register-button {
+    margin: 10px auto;
+    width: fit-content;
+
+}
+
+.register-button button {
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background-color: #7A4E9A;
+    padding: 10px 50px;
+    border-radius: 40px;
+}
