@@ -3,23 +3,18 @@ import "./css/layout.css";
 import "./css/reset.css";
 import './App.css';
 import messageIcon from "./img/message-icon.png"
-import logoIcon from "./img/logo.png"
 import profile from "./img/profile.png"
+import logoIcon from "./img/logo.png"
 import settingIcon from "./img/setting-icon.png"
+
+import Header from "./components/Header"
 
 export const App = () => {
     return (
         <React.Fragment>
             <body className="appear">
                 <div id="wrapper">
-                    <header id="header" className="fadeDownTrigger">
-                        <h1 className="smoothTrigger">
-                            <a href="#"><img src={logoIcon} alt=""/></a>
-                        </h1>
-                        <div className="header-area">
-                            <a href="#" className="float3"><img src={settingIcon} alt=""/></a>
-                        </div>
-                    </header>
+                  <Header logoIcon={logoIcon} settingIcon={settingIcon}/>
                     <div id="container">
                         <main>
                             <div className="full-page">
