@@ -3,8 +3,14 @@ const GitHub = () => {
         <div className="github">
             <ul className="github-top">
                 <li className="github-title info-title">GitHub</li>
-                <li className="github-followers">23
+                <li>2599
+                    <span>Contributions</span>
+                </li>
+                <li>5
                     <span>Followers</span>
+                </li>
+                <li>82
+                    <span>Repositories</span>
                 </li>
             </ul>
             <div className="github-subtitle info-subtitle">

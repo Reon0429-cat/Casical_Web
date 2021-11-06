@@ -1,3 +1,5 @@
+import pieChart from "../img/pie-chart.png"
+
 const Language = () => {
     return (
         <div className="language">
@@ -5,7 +7,12 @@ const Language = () => {
                 <span>from GitHub</span>
             </p>
             <div className="chart-area pie">
-                <canvas id="language-chart"></canvas>
+                <img src={pieChart} alt="" />
+                <div className="percentage">
+                    <p><span>●</span>Swift 94%</p>
+                    <p><span>●</span>JavaScript 3%</p>
+                    <p><span>●</span>others 2%</p>
+                </div>
             </div>
         </div>
     );

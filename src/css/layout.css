@@ -250,12 +250,14 @@ about
     display: flex;
 }
 
+.profile-item li:first-child {
+    width: 60%;
+}
+
 .profile-item li {
-    width: 50%;
     color: var(--text2nd);
     font-size: 19px;
 }
-
 .profile-id {
     text-align: center;
 }
@@ -290,9 +292,34 @@ about
 }
 
 /* language */
+.chart-area {
+    display: flex;
+    margin-top: 40px;
+}
 
-.language-chart {
-    height: 170px;
+.chart-area img {
+    width: 50%;
+}
+
+.percentage {
+    color:#777680;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.percentage p {
+    line-height: 40px;
+}
+
+.percentage p:first-child span {
+    color: var(--primary);
+}
+.percentage p:nth-child(2) span {
+    color: #D4A9F3;
+}
+.percentage p:nth-child(3) span {
+    color: #D8C7F8;
 }
 
 /*--------------------------------------
@@ -515,3 +542,56 @@ ul.graph li {
 .bar16 {
     height: 150px;
 }
+
+/* 棒グラフ3 CSS Only */
+  .bar-graph-horizontal {
+    max-width: 100%;
+  }
+  
+  .bar-graph-horizontal > div {
+    float: left;
+    width: 100%;
+  }
+  
+  .bar-graph-horizontal .year {
+    margin-left: 10px;
+    width: 50px;
+    color: var(--text2nd);
+    font-weight: bold;
+  }
+  
+  .bar-graph-horizontal .bar {
+    border-radius: 3px;
+    height: 30px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    width: 0;
+  }
+  
+  .bar-graph-one .bar::after {
+    color: #fff;
+    content: attr(data-percentage);
+    font-weight: 700;
+    position: absolute;
+    right: 16px;
+  }
+  .bar-graph-one .bar-one .bar {
+    background-color:#8c5aff;
+    width: 86%;
+  }
+  
+  .bar-graph-one .bar-two .bar {
+    background-color: #9f77ff;
+    width: 77%;
+  }
+  
+  .bar-graph-one .bar-three .bar {
+    background-color: #ae8ffe;
+    width: 75%;
+  }
+  
+  .bar-graph-one .bar-four .bar {
+    background-color: #b69afe;
+    width: 62%;
+  }

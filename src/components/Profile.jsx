@@ -8,7 +8,7 @@ const Profile = () => {
                 <div className="profile-content">
                     <p className="profile-name">OONISHI REON</p>
                     <ul className="profile-item">
-                        <li>●1年</li>
+                        <li>●1年1ヶ月</li>
                         <li>●東京</li>
                     </ul>
                 </div>
