@@ -268,7 +268,8 @@ about
 
 .profile-bio {
     width: 90%;
-    margin: 12px auto 0;
+    text-align: center;
+    margin: 5px auto;
 }
 
 /* skillScore */
@@ -289,6 +290,24 @@ about
 
 .skillscore-chart {
     height: 170px;
+}
+
+.skillscore .chart-area {
+    display: flex;
+    font-weight: bold;
+    font-size: 32px;
+    color: var(--primary);
+    margin: 20px 0;
+    margin-left: 10px;
+}
+
+.skillscore .chart-area p {
+    margin: auto 0;
+}
+
+.skillscore .chart-area span {
+    color: var(--text2nd);
+    font-size: 20px;
 }
 
 /* language */

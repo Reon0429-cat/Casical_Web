@@ -18,7 +18,7 @@ const Profile = () => {
                 <p className="qiita-id">Qiita：REON</p>
             </div>
             <div className="profile-bio">
-                <p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <p> iOSエンジニア志望 <br/> 🎓都内の大学生です！</p>
             </div>
         </div>
     );
